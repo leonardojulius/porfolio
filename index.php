@@ -15,7 +15,7 @@
         <img src="images/logo.svg" alt="23andfour logo">
 
         <nav>
-            <a href="" class="hide-desktop">
+            <a href="#" class="hide-desktop">
                 <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
             </a>
 
@@ -39,26 +39,30 @@
         <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
     </section>
 </div>
-
-    <div class="blue-container">
-        <div class="container">
+        <div class="blue-container">
+          <div class="container">
+    
             <ul>
-                <li>
-                    <img src="images/icon-1.svg" alt="Calendar icon">
-                    <p>Lorem Ipsum</p>
-                </li>
+                    <li>
+                        <img src="images/icon-1.svg" alt="Calendar icon">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae</p>
+                    </li>
 
-                <li>
-                    <img src="images/icon-2.svg" alt="Calendar icon">
-                    <p>Lorem Ipsum</p>
-                </li>
+                    <li>
+                        <img src="images/icon-2.svg" alt="Calendar icon">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae</p>
+                    </li>
 
-                <li>
-                    <img src="images/icon-3.svg" alt="Calendar icon">
-                    <p>Lorem Ipsum</p>
-                </li>
+
+                    <li>
+                        <img src="images/icon-3.svg" alt="Calendar icon">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae</p>
+                    </li>
             </ul>
-            </div>
+                   
+
+            
+        </div>
     </div>
 
     <div class="gray-container">
@@ -104,5 +108,20 @@
             </div>
         </div>
     </footer>
+    <script>
+
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
 </body>
 </html>
